@@ -4,6 +4,12 @@ import { Packages } from "/lib/collections";
 import { Reaction } from "/server/api";
 import { connectorsRoles } from "../lib/roles";
 
+/**
+ * @file Connectors Dashboard action panel
+ *
+ * @module connectors
+ */
+
 export const methods = {
   /**
    * connectors/connection/toggle
