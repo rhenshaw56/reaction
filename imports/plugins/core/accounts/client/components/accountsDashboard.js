@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import { Components } from "@reactioncommerce/reaction-components";
 import { default as sortUsersIntoGroups, sortGroups } from "../helpers/accountsHelper";
 
+/**
+ * React Component for an email address submit form
+ * @extends Component
+ */
 class AccountsDashboard extends Component {
   static propTypes = {
     accounts: PropTypes.array,

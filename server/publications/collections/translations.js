@@ -4,13 +4,6 @@ import { Shops, Translations } from "/lib/collections";
 import { Reaction } from "/server/api";
 
 /**
-* @file Translations publication
-*
-*
-* @module Translations
-*/
-
-/**
  * Translations publication
  * @param {String|Array} sessionLanguages - String or array of langauges. current sessionLanguage, default to 'en'
  * @returns { Object } returns Translations

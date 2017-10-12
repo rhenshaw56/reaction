@@ -11,7 +11,6 @@ import { currencyDep } from "./main";
  * @param {Boolean} useDefaultShopCurrency - flag for displaying shop's currency in Admin view of PDP
  * @return  {Object}  user currency or shop currency if none is found
  */
-
 function findCurrency(defaultCurrency, useDefaultShopCurrency) {
   const shop = Shops.findOne(Reaction.getPrimaryShopId(), {
     fields: {
@@ -101,6 +100,11 @@ export function formatPriceString(formatPrice, useDefaultShopCurrency) {
   return price;
 }
 
+/**
+ * formatNumber
+ * @param {Number} currentPrice - price
+ * @return {Number} currentPrice
+ */
 export function formatNumber(currentPrice) {
   const locale = Reaction.Locale.get();
   let price = currentPrice;

@@ -11,7 +11,7 @@ import { registerComponent } from "@reactioncommerce/reaction-components";
  * @file SortableTable is a wrapper around ReactTable.
  *       Anything that works in ReactTable should work in SortableTable out of th ebox. Note: it may not be styled
  *       ReactTable docs are available at: https://react-table.js.org/#/story/readme
- * @module SortableTable
+ * @extends Component
  */
 
 class SortableTable extends Component {

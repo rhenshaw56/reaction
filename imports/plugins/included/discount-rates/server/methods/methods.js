@@ -4,6 +4,12 @@ import { Reaction } from "/server/api";
 import { Discounts } from  "/imports/plugins/core/discounts/lib/collections";
 import { DiscountRates as DiscountSchema } from "../../lib/collections/schemas";
 
+/**
+ * @file Discount Rates plugin
+ *
+ * @module discount-rates
+ */
+
 // attach discount code specific schema
 Discounts.attachSchema(DiscountSchema, { selector: { discountMethod: "rate" } });
 

@@ -19,7 +19,6 @@ function directoryExists(dirPath) {
  * @param  {Object} source a json i18next object
  * @return {Boolean} false if assets weren't loaded
  */
-
 export function loadTranslation(source) {
   try {
     const content = typeof source === "string" ? JSON.parse(source) : source;
@@ -63,8 +62,8 @@ export function loadTranslations(sources) {
  * into the Assets collection
  * Assets collection is processed with Reaction.Import
  * after all assets have been loaded.
+ * @return {null} - null
  */
-
 export function loadCoreTranslations() {
   const meteorPath = fs.realpathSync(process.cwd() + "/../");
   const i18nFolder = `${meteorPath}/server/assets/app/data/i18n/`;

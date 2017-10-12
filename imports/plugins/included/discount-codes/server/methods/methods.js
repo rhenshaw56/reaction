@@ -6,20 +6,19 @@ import { Cart } from "/lib/collections";
 import { Discounts } from  "/imports/plugins/core/discounts/lib/collections";
 import { DiscountCodes as DiscountSchema } from "../../lib/collections/schemas";
 
+/**
+ * @file Discount Code methods
+ *
+ * @module discount-codes
+ */
+
 // attach discount code specific schema
 Discounts.attachSchema(DiscountSchema, { selector: { discountMethod: "code" } });
 
-//
-// make all discount methods available
-//
 export const methods = {
   /**
    * discounts/codes/discount
-   * calculates percentage off discount rates
-   * we intentionally passed ids, instead
-   * of the cart,discount Object
-   * for a smaller request providing an
-   * additional level of validation.
+   * @summary calculates percentage off discount rates we intentionally passed ids, instead of the cart,discount Object for a smaller request providing an additional level of validation.
    * @param  {String} cartId cartId
    * @param  {String} discountId discountId
    * @return {Number} returns discount total
@@ -38,10 +37,10 @@ export const methods = {
 
     return discount;
   },
+
   /**
-   * TODO discounts/codes/credit
-   * calculates a credit off cart
-   * for discount codes
+   * discounts/codes/credit
+   * @summary calculates a credit off cart for discount codes
    * @param  {String} cartId cartId
    * @param  {String} discountId discountId
    * @return {Number} returns discount total
@@ -54,9 +53,10 @@ export const methods = {
     discount = discountMethod.discount;
     return discount;
   },
+
   /**
-   * TODO discounts/codes/sale
-   * calculates a new price for an item
+   * discounts/codes/sale
+   * @summary calculates a new price for an item
    * @param  {String} cartId cartId
    * @param  {String} discountId discountId
    * @return {Number} returns discount total
@@ -78,9 +78,10 @@ export const methods = {
 
     return discount;
   },
+
   /**
-   * TODO discounts/codes/shipping
-   * calculates a discount based on the value
+   * discounts/codes/shipping
+   * @summary calculates a discount based on the value
    * of a calculated shipping rate in the cart.
    * @param  {String} cartId cartId
    * @param  {String} discountId discountId
@@ -101,6 +102,7 @@ export const methods = {
 
     return discount;
   },
+
   /**
    * discounts/addCode
    * @param  {String} modifier update statement
@@ -125,7 +127,7 @@ export const methods = {
   },
   /**
    * discounts/codes/remove
-   * removes discounts that have been previously applied
+   * @summary removes discounts that have been previously applied
    * to a cart.
    * @param  {String} id cart id of which to remove a code
    * @param  {String} codeId discount Id from cart.billing
@@ -174,7 +176,7 @@ export const methods = {
   },
   /**
    * discounts/codes/apply
-   * checks validity of code conditions and then
+   * @summary checks validity of code conditions and then
    * applies a discount as a paymentMethod to cart
    * @param  {String} id cart/order id of which to remove a code
    * @param  {String} code valid discount code

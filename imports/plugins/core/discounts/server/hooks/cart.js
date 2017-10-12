@@ -3,6 +3,12 @@ import { Meteor } from "meteor/meteor";
 import { Cart } from "/lib/collections";
 
 /**
+ * @file Discounts
+ *
+ * @module discounts
+ */
+
+/**
 * Cart Hooks for Discounts
 * @type {Object}
 * @desc After cart update apply discounts.

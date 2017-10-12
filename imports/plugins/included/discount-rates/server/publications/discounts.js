@@ -6,7 +6,13 @@ import { Discounts } from "/imports/plugins/core/discounts/lib/collections";
 import { Reaction } from "/server/api";
 
 /**
- * Discounts
+ * @file Discount Rates plugin
+ *
+ * @module discount-rates
+ */
+
+/**
+ * DiscountRates
  * @type {Publication}
  * @param {Object} query
  * @param {Object} options

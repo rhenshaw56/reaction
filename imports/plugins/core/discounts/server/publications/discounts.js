@@ -5,6 +5,12 @@ import { Discounts } from "../../lib/collections";
 import { Reaction } from "/server/api";
 
 /**
+ * @file Discounts
+ *
+ * @module discounts
+ */
+
+/**
  * Discounts
  * @type {Publication}
  * @param {Object} query

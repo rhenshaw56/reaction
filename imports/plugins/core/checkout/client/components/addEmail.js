@@ -6,13 +6,17 @@ import { Reaction, i18next } from "/client/api";
 import { Components } from "@reactioncommerce/reaction-components";
 
 /**
- * @summary Allows user to add an email after completing an order
- * @param {Object} props - React PropTypes
- * @property {Object} order - An object representing the order
- * @property {String} orderEmail - a string containing the email attached to the order if it exists
- * @return {Node} React node containing input box when no email has been attached to the order
+ * React Component for an email address submit form
+ * @extends Component
  */
 class AddEmail extends Component {
+  /**
+   * @summary Allows user to add an email after completing an order
+   * @param {Object} props - React PropTypes
+   * @property {Object} order - An object representing the order
+   * @property {String} orderEmail - a string containing the email attached to the order if it exists
+   * @return {Node} React node containing input box when no email has been attached to the order
+   */
   constructor(props) {
     super(props);
     this.state = {

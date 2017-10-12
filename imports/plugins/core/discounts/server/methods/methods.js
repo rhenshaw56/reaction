@@ -4,9 +4,11 @@ import { Cart } from "/lib/collections";
 import { Discounts } from "../../lib/collections";
 import Reaction from "../api";
 
-//
-// make all discount methods available
-//
+/**
+ * @file Discounts
+ *
+ * @module discounts
+ */
 export const methods = {
   /**
    * discounts/deleteRate

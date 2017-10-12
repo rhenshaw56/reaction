@@ -3,10 +3,15 @@ import { Discounts } from "/imports/plugins/core/discounts/lib/collections/schem
 import { registerSchema } from "@reactioncommerce/reaction-collections";
 
 /**
+ * @file Discount Code - Code schema
+ *
+ * @module discount-codes
+ */
+
+/**
 * Discount Codes Schema
 * @type {Object}
-* @desc schema that extends discount schema
-* with properties for discount codes.
+* @summary schema that extends discount schema with properties for discount codes.
 */
 export const DiscountCodes = new SimpleSchema([
   Discounts, {

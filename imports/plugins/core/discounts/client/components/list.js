@@ -7,6 +7,12 @@ import DiscountForm from "./form";
 import { composeWithTracker } from "@reactioncommerce/reaction-components";
 import { Reaction } from "/client/api";
 
+/**
+ * @file Discounts
+ *
+ * @module discounts
+ */
+
 class DiscountList extends Component {
   constructor(props) {
     super(props);

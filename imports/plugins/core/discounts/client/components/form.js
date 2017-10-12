@@ -5,6 +5,12 @@ import { Meteor } from "meteor/meteor";
 import { i18next } from "/client/api";
 import { Translation } from "/imports/plugins/core/ui/client/components";
 
+/**
+ * @file Discounts
+ *
+ * @module discounts
+ */
+
 export default class DiscountForm extends Component {
   constructor(props) {
     super(props);

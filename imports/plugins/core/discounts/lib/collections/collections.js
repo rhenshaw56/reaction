@@ -2,6 +2,12 @@ import { Mongo } from "meteor/mongo";
 import * as Schemas from "./schemas";
 
 /**
+ * @file Discounts
+ *
+ * @module discounts
+ */
+
+/**
 * Discounts Collection
 * @type {Object}
 * @desc Collection for custom discount rates

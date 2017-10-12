@@ -3,6 +3,12 @@ import { DiscountsPackageConfig } from "/imports/plugins/core/discounts/lib/coll
 import { registerSchema } from "@reactioncommerce/reaction-collections";
 
 /**
+ * @file Discount Rates plugin
+ *
+ * @module discount-rates
+ */
+
+/**
 * Discount Rates Package Config Schema
 * @type {Object}
 * @desc schema that extends discount schema
